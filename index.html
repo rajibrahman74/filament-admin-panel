@@ -14,7 +14,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-   
+
     <!-- 
         Tailwind css cdn link
      -->
@@ -24,51 +24,64 @@
     <!-- 
         navbar
      -->
-     <section>
-      <div class="navbar shadow-md px-4 md:px-6 lg:px-8 py-3 flex justify-between">
-          <!-- Hamburger Menu Icon for Small Screens -->
-          <button id="menu-toggle" class="block md:hidden text-gray-400 focus:outline-none">
-              <i class="fa-solid fa-bars text-xl"></i>
-          </button>
-          <div class="mb-4 md:mb-0 hidden lg:block">
-              <a href="#" class="text-xl font-bold">Filament Demo</a>
+    <section>
+      <div
+        class="navbar shadow-md px-4 md:px-6 lg:px-8 py-3 flex justify-between"
+      >
+        <!-- Hamburger Menu Icon for Small Screens -->
+        <button
+          id="menu-toggle"
+          class="block md:hidden text-gray-400 focus:outline-none"
+        >
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+        <div class="mb-4 md:mb-0 hidden lg:block">
+          <a href="#" class="text-xl font-bold">Filament Demo</a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <!-- Search Bar -->
+          <div class="relative">
+            <i
+              class="fa-solid fa-magnifying-glass text-gray-400 absolute top-1/2 transform -translate-y-1/2 left-3"
+            ></i>
+            <input
+              type="text"
+              placeholder="Search"
+              class="transition-all duration-300 ease-in-out md:w-48 lg:w-64 px-4 py-1.5 rounded-lg border border-gray-300 border-[0.5px] focus:border-[0.5px] focus:outline-none focus:ring-1 focus:ring-[#D97706] placeholder-gray-400 transform scale-100 hover:scale-105 focus:scale-105"
+            />
           </div>
-          <div class="flex items-center space-x-4">
-              <!-- Search Bar -->
-              <div class="relative">
-                  <i class="fa-solid fa-magnifying-glass text-gray-400 absolute top-1/2 transform -translate-y-1/2 left-3"></i>
-                  <input
-                      type="text"
-                      placeholder="Search"
-                      class="transition-all duration-300 ease-in-out md:w-48 lg:w-64 px-4 py-1.5 rounded-lg border border-gray-300 border-[0.5px] focus:border-[0.5px] focus:outline-none focus:ring-1 focus:ring-[#D97706] placeholder-gray-400 transform scale-100 hover:scale-105 focus:scale-105"
-                  />
-              </div>
-  
-              <!-- Bell Icon with Notification Count -->
-              <div class="relative">
-                  <i class="fa-regular fa-bell text-xl text-gray-400 hover:text-gray-600"></i>
-                  <span class="absolute bottom-4 p-[0.5px] text-xs text-[#D97706] border rounded-full border-gray-100">0</span>
-              </div>
-  
-              <!-- User Avatar Dropdown -->
-              <div class="dropdown dropdown-end">
-                  <div tabindex="0" role="button" class="avatar">
-                      <div class="w-9 rounded-full">
-                          <!-- Replace the image URL with your user avatar image URL -->
-                          <img class="rounded-full" alt="User Avatar" src="https://placekitten.com/50/50" />
-                      </div>
-                  </div>
-              </div>
+
+          <!-- Bell Icon with Notification Count -->
+          <div class="relative">
+            <i
+              class="fa-regular fa-bell text-xl text-gray-400 hover:text-gray-600"
+            ></i>
+            <span
+              class="absolute bottom-4 p-[0.5px] text-xs text-[#D97706] border rounded-full border-gray-100"
+              >0</span
+            >
           </div>
+
+          <!-- User Avatar Dropdown -->
+
+          <div class="w-9 rounded-full">
+            <!-- Replace the image URL with your user avatar image URL -->
+            <img
+              class="rounded-full"
+              alt="User Avatar"
+              src="https://placekitten.com/50/50"
+            />
+          </div>
+        </div>
       </div>
-  </section>
-  
-  
+    </section>
 
     <!-- 
       dashboard section
      -->
-    <section class="container flex justify-center lg:justify-between gap-x-2 mx-auto px-4 mt-6">
+    <section
+      class="container flex justify-center lg:justify-between gap-x-2 mx-auto px-4 mt-6"
+    >
       <aside
         class="flex flex-col w-1/5 h-screen px-5 overflow-y-auto bg-white border-r rtl:border-r-0 rtl:border-l dark:bg-gray-900 dark:border-gray-700 hidden lg:block"
       >
@@ -101,196 +114,201 @@
              -->
             <div>
               <button
-              class="flex items-center justify-between w-full px-3 py-2 text-xs font-medium text-gray-600 transition-colors duration-300 transform rounded-lg  hover:text-gray-700"
-            >
-              <div class="flex items-center gap-x-2 text-[17px] text-gray-500">
-                <span>Shop</span>
-              </div>
+                class="flex items-center justify-between w-full px-3 py-2 text-xs font-medium text-gray-600 transition-colors duration-300 transform rounded-lg hover:text-gray-700"
+              >
+                <div
+                  class="flex items-center gap-x-2 text-[17px] text-gray-500"
+                >
+                  <span>Shop</span>
+                </div>
 
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-4 h-4 rtl:rotate-180"
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 rtl:rotate-180"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </button>
+              <a
+                class="flex items-center px-3 py-2 transition-colors duration-300 transform rounded-lg dark:text-gray-300 ml-2 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+                href="#"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                />
-              </svg>
-            </button>
-            <a
-              class="flex items-center px-3 py-2 transition-colors duration-300 transform rounded-lg dark:text-gray-300 ml-2 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 "
-              href="#"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-5 h-5"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-                />
-              </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                  />
+                </svg>
 
-              <span class="mx-2">Product</span>
-              <span class="border rounded-sm p-1 text-[#D97706] text-sm ml-auto"
-                >15</span
+                <span class="mx-2">Product</span>
+                <span
+                  class="border rounded-sm p-1 text-[#D97706] text-sm ml-auto"
+                  >15</span
+                >
+              </a>
+              <a
+                class="flex items-center px-3 py-2 transition-colors duration-300 transform rounded-lg dark:text-gray-300 ml-2 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+                href="#"
               >
-            </a>
-            <a
-              class="flex items-center px-3 py-2 transition-colors duration-300 transform rounded-lg dark:text-gray-300 ml-2 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 "
-              href="#"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-5 h-5"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-                />
-              </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                  />
+                </svg>
 
-              <span class="mx-2">Customers</span>
-             
-            </a>
-            <a
-              class="flex items-center px-3 py-2 transition-colors duration-300 transform rounded-lg dark:text-gray-300 ml-2 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 "
-              href="#"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-5 h-5"
+                <span class="mx-2">Customers</span>
+              </a>
+              <a
+                class="flex items-center px-3 py-2 transition-colors duration-300 transform rounded-lg dark:text-gray-300 ml-2 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+                href="#"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-                />
-              </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                  />
+                </svg>
 
-              <span class="mx-2">Order</span>
-              <span class="border rounded-sm p-1 text-[#D97706] text-sm ml-auto"
-                >155</span
-              >
-            </a>
+                <span class="mx-2">Order</span>
+                <span
+                  class="border rounded-sm p-1 text-[#D97706] text-sm ml-auto"
+                  >155</span
+                >
+              </a>
             </div>
             <!--
               Blog dropdown
              -->
             <div>
               <button
-              class="flex items-center justify-between w-full px-3 py-2 text-xs font-medium text-gray-600 transition-colors duration-300 transform rounded-lg  hover:text-gray-700"
-            >
-              <div class="flex items-center gap-x-2 text-[17px] text-gray-500">
-                <span>Blog</span>
-              </div>
+                class="flex items-center justify-between w-full px-3 py-2 text-xs font-medium text-gray-600 transition-colors duration-300 transform rounded-lg hover:text-gray-700"
+              >
+                <div
+                  class="flex items-center gap-x-2 text-[17px] text-gray-500"
+                >
+                  <span>Blog</span>
+                </div>
 
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-4 h-4 rtl:rotate-180"
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 rtl:rotate-180"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </button>
+              <a
+                class="flex items-center px-3 py-2 transition-colors duration-300 transform rounded-lg dark:text-gray-300 ml-2 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+                href="#"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                />
-              </svg>
-            </button>
-            <a
-              class="flex items-center px-3 py-2 transition-colors duration-300 transform rounded-lg dark:text-gray-300 ml-2 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 "
-              href="#"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-5 h-5"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-                />
-              </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                  />
+                </svg>
 
-              <span class="mx-2">Posts</span>
-              <span class="border rounded-sm p-1 text-[#D97706] text-sm ml-auto"
-                >15</span
+                <span class="mx-2">Posts</span>
+                <span
+                  class="border rounded-sm p-1 text-[#D97706] text-sm ml-auto"
+                  >15</span
+                >
+              </a>
+              <a
+                class="flex items-center px-3 py-2 transition-colors duration-300 transform rounded-lg dark:text-gray-300 ml-2 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+                href="#"
               >
-            </a>
-            <a
-              class="flex items-center px-3 py-2 transition-colors duration-300 transform rounded-lg dark:text-gray-300 ml-2 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 "
-              href="#"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-5 h-5"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-                />
-              </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                  />
+                </svg>
 
-              <span class="mx-2">Categories</span>
-             
-            </a>
-            <a
-              class="flex items-center px-3 py-2 transition-colors duration-300 transform rounded-lg dark:text-gray-300 ml-2 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 "
-              href="#"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-5 h-5"
+                <span class="mx-2">Categories</span>
+              </a>
+              <a
+                class="flex items-center px-3 py-2 transition-colors duration-300 transform rounded-lg dark:text-gray-300 ml-2 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+                href="#"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-                />
-              </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                  />
+                </svg>
 
-              <span class="mx-2">Authors</span>
-              <span class="border rounded-sm p-1 text-[#D97706] text-sm ml-auto"
-                >155</span
-              >
-            </a>
+                <span class="mx-2">Authors</span>
+                <span
+                  class="border rounded-sm p-1 text-[#D97706] text-sm ml-auto"
+                  >155</span
+                >
+              </a>
             </div>
-
           </nav>
         </div>
       </aside>
@@ -304,12 +322,15 @@
         <!-- 
           input group
          -->
-         <div>
-          <form class=" flex flex-col lg:flex-row justify-between item-center gap-4 border rounded-2xl p-4 ">
-
+        <div>
+          <form
+            class="flex flex-col lg:flex-row justify-between item-center gap-4 border rounded-2xl p-4"
+          >
             <div class="flex flex-col gap-y-3">
               <label>Business customers only</label>
-              <select class="select w-full lg:max-w-xs px-8 py-1.5 rounded-lg border border-gray-300 border-[0.5px] focus:border-[0.5px] focus:outline-none focus:ring-1 focus:ring-[#D97706] placeholder-gray-400">
+              <select
+                class="select w-full lg:max-w-xs px-8 py-1.5 rounded-lg border border-gray-300 border-[0.5px] focus:border-[0.5px] focus:outline-none focus:ring-1 focus:ring-[#D97706] placeholder-gray-400"
+              >
                 <option disabled selected>-</option>
                 <option>Yes</option>
                 <option>No</option>
@@ -318,15 +339,67 @@
 
             <div class="flex flex-col gap-y-3">
               <label>Start date</label>
-              <input type="date" class="select w-full lg:max-w-xs px-8 py-1.5 rounded-lg border border-gray-300 border-[0.5px] focus:border-[0.5px] focus:outline-none focus:ring-1 focus:ring-[#D97706] placeholder-gray-400">
+              <input
+                type="date"
+                class="select w-full lg:max-w-xs px-8 py-1.5 rounded-lg border border-gray-300 border-[0.5px] focus:border-[0.5px] focus:outline-none focus:ring-1 focus:ring-[#D97706] placeholder-gray-400"
+              />
             </div>
             <div class="flex flex-col gap-y-3">
               <label>End date</label>
-              <input type="date" class="select w-full lg:max-w-xs px-8 py-1.5 rounded-lg border border-gray-300 border-[0.5px] focus:border-[0.5px] focus:outline-none focus:ring-1 focus:ring-[#D97706] placeholder-gray-400">
+              <input
+                type="date"
+                class="select w-full lg:max-w-xs px-8 py-1.5 rounded-lg border border-gray-300 border-[0.5px] focus:border-[0.5px] focus:outline-none focus:ring-1 focus:ring-[#D97706] placeholder-gray-400"
+              />
             </div>
-
           </form>
-         </div>
+        </div>
+
+        <!-- User Info -->
+        <div class="flex lg:flex-row flex-col justify-between gap-4 my-4">
+          <!-- Left Section -->
+          <div class="lg:w-1/2 w-full flex items-center rounded-3xl border p-4">
+            <div class="w-9 rounded-full mr-3">
+              <!-- Replace the image URL with your user avatar image URL -->
+              <img
+                class="rounded-full"
+                alt="User Avatar"
+                src="https://placekitten.com/50/50"
+              />
+            </div>
+            <div>
+              <h1 class="text-lg font-semibold">Welcome</h1>
+              <p class="text-sm">Demo user</p>
+            </div>
+            <div class="ml-auto flex justify-center items-center gap-3 border rounded-lg p-1.5 cursor-pointer">
+              <i class="fa-solid fa-arrow-right-from-bracket text-lg text-gray-400"></i>
+              <span class="text-sm font-semibold">Sign out</span>
+            </div>
+          </div>
+
+          <!-- Right Section -->
+          <div
+            class="lg:w-1/2 w-full flex justify-between rounded-3xl border p-4"
+          >
+            <div>
+              <h1 class="text-xl font-semibold mb-2 cursor-pointer font-semibold">Filament</h1>
+              <p class="text-sm">v3.1.0</p>
+            </div>
+            <div class="flex flex-col gap-2">
+              <p class="flex items-center text-sm hover:underline">
+                <i class="far fa-file text-[#6366F1] mr-2"></i>
+                Documentation
+              </p>
+              <p class="flex items-center text-sm hover:underline">
+                <i class="fab fa-github text-[#6366F1] mr-2"></i>
+                GitHub
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 
+          
+         -->
       </div>
     </section>
   </body>
