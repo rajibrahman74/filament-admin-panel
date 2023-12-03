@@ -68,9 +68,9 @@
     <!-- 
       dashboard section
      -->
-    <section class="container flex justify-between gap-x-2 mx-auto px-4 mt-6">
+    <section class="container flex justify-center lg:justify-between gap-x-2 mx-auto px-4 mt-6">
       <aside
-        class="flex flex-col w-1/4 h-screen px-5 overflow-y-auto bg-white border-r rtl:border-r-0 rtl:border-l dark:bg-gray-900 dark:border-gray-700"
+        class="flex flex-col w-1/5 h-screen px-5 overflow-y-auto bg-white border-r rtl:border-r-0 rtl:border-l dark:bg-gray-900 dark:border-gray-700 hidden lg:block"
       >
         <div class="flex flex-col justify-between flex-1">
           <nav class="-mx-3 space-y-3">
@@ -298,29 +298,31 @@
       <!-- 
         main dashboard layout
        -->
-      <div class="w-3/4 mt-1">
-        <h3 class="text-3xl font-bold">Dashboard</h3>
+      <div class="lg:w-4/5 w-full mx-3 mt-1">
+        <h3 class="text-2xl lg:text-3xl font-bold mb-4">Dashboard</h3>
 
         <!-- 
           input group
          -->
          <div>
-          <form class="">
+          <form class=" flex flex-col lg:flex-row justify-between item-center gap-4 border rounded-2xl p-4 ">
 
             <div class="flex flex-col gap-y-3">
               <label>Business customers only</label>
-              <select class="select w-full max-w-xs px-8 py-1.5 rounded-lg border border-gray-300 border-[0.5px] focus:border-[0.5px] focus:outline-none focus:ring-1 focus:ring-[#D97706] placeholder-gray-400">
-                <option disabled selected>Who shot first?</option>
-                <option>Han Solo</option>
-                <option>Greedo</option>
+              <select class="select w-full lg:max-w-xs px-8 py-1.5 rounded-lg border border-gray-300 border-[0.5px] focus:border-[0.5px] focus:outline-none focus:ring-1 focus:ring-[#D97706] placeholder-gray-400">
+                <option disabled selected>-</option>
+                <option>Yes</option>
+                <option>No</option>
               </select>
             </div>
 
             <div class="flex flex-col gap-y-3">
               <label>Start date</label>
-              <!-- <select class="select w-full max-w-xs px-8 py-1.5 rounded-lg border border-gray-300 border-[0.5px] focus:border-[0.5px] focus:outline-none focus:ring-1 focus:ring-[#D97706] placeholder-gray-400">
-              </select> -->
-              <input type="date" class="select w-full max-w-xs px-8 py-1.5 rounded-lg border border-gray-300 border-[0.5px] focus:border-[0.5px] focus:outline-none focus:ring-1 focus:ring-[#D97706] placeholder-gray-400">
+              <input type="date" class="select w-full lg:max-w-xs px-8 py-1.5 rounded-lg border border-gray-300 border-[0.5px] focus:border-[0.5px] focus:outline-none focus:ring-1 focus:ring-[#D97706] placeholder-gray-400">
+            </div>
+            <div class="flex flex-col gap-y-3">
+              <label>End date</label>
+              <input type="date" class="select w-full lg:max-w-xs px-8 py-1.5 rounded-lg border border-gray-300 border-[0.5px] focus:border-[0.5px] focus:outline-none focus:ring-1 focus:ring-[#D97706] placeholder-gray-400">
             </div>
 
           </form>
