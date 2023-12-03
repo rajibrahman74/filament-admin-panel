@@ -32,7 +32,7 @@
         navbar
      -->
     <section>
-      <div class="navbar bg-base-100 shadow-md px-6">
+      <div class="navbar bg-base-100 shadow-md px-10">
         <div class="flex-1">
           <a class="text-xl text-bold font-bold">Filament Demo</a>
         </div>
@@ -48,15 +48,16 @@
             />
           </div>
           <div class="relative">
-            <i class="fa-regular fa-bell text-xl text-gray-400 hover:text-gray-500 "></i>
-            <span class="absolute bottom-4 p-[0.5px] text-xs text-[#D97706] border rounded-full border-gray-100">0</span>
+            <i
+              class="fa-regular fa-bell text-xl text-gray-400 hover:text-gray-500"
+            ></i>
+            <span
+              class="absolute bottom-4 p-[0.5px] text-xs text-[#D97706] border rounded-full border-gray-100"
+              >0</span
+            >
           </div>
           <div class="dropdown dropdown-end">
-            <div
-              tabindex="0"
-              role="button"
-              class="avatar"
-            >
+            <div tabindex="0" role="button" class="avatar">
               <div class="w-9 rounded-full">
                 <img
                   alt="Tailwind CSS Navbar component"
@@ -68,31 +69,85 @@
               tabindex="0"
               class="mt-3 z-[1] p-2 shadow-lg menu menu-sm dropdown-content bg-base-100 rounded w-56"
             >
-            <div class="space-y-2 px-2 py-2">
-              <div class="flex jutify-center items-center gap-2">
-                <div>
-                  <i class="fa-regular fa-user text-gray-400 text-md"></i>
+              <div class="space-y-2 px-2 py-2">
+                <div class="flex jutify-center items-center gap-2">
+                  <div>
+                    <i class="fa-regular fa-user text-gray-400 text-md"></i>
+                  </div>
+                  <div>User demo</div>
                 </div>
-                <div>
-                  User demo
-                </div>
-              </div>
 
-              <div class="flex justify-between border-t-[0.5px] border-b-[0.5px] border-gray-200 py-4">
-                <i class="fa-regular fa-sun text-gray-500 text-md hover:bg-gray-100 px-5 py-2 rounded-md"></i>
-                <i class="fa-solid fa-moon text-gray-500 text-md hover:bg-gray-100 px-5 py-2 rounded-md"></i>
-                <i class="fa-solid fa-desktop text-gray-500 text-md hover:bg-gray-100 px-5 py-2 rounded-md"></i>
-              </div>
-              <div class="flex jutify-center items-center gap-2">
-                <div>
-                  <i class="fa-solid fa-arrow-right-from-bracket text-gray-400 text-md"></i>
-                </div>
-                <div>
-                  Sign out
-                </div>
-              </div>
-            </div>
+                <div
+                  class="flex justify-between border-t-[0.5px] border-b-[0.5px] border-gray-200 py-4"
+                >
+       
+                  <div>
+                    <span
+                      class="relative overflow-hidden cursor-pointer group hover:overflow-visible focus-visible:outline-none"
+                      aria-describedby="tooltip-01"
+                    >
+                      <!-- Tooltip trigger -->
+                      <i
+                        class="fa-regular fa-sun text-gray-500 text-md hover:bg-gray-100 px-5 py-2 rounded-md"
+                      ></i>
+                      <!-- End Tooltip trigger -->
+                      <span
+                        role="tooltip"
+                        id="tooltip-01"
+                        class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-36 -translate-x-1/2 rounded shadow-md bg-gray-100 p-2 text-sm opacity-0 transition-all before:invisible before:absolute before:left-1/2 before:top-full before:z-10 before:mb-2 before:-ml-2 before:border-x-8 before:border-t-8 before:border-x-transparent before:border-t-slate-700 before:opacity-0 before:transition-all before:content-[''] group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100"
+                        >Enable light theme</span
+                      >
+                    </span>
+                  </div>
 
+                  <div>
+                    <span
+                      class="relative overflow-hidden cursor-pointer group hover:overflow-visible focus-visible:outline-none"
+                      aria-describedby="tooltip-01"
+                    >
+                      <!-- Tooltip trigger -->
+                      <i
+                    class="fa-solid fa-moon text-gray-500 text-md hover:bg-gray-100 px-5 py-2 rounded-md"
+                  ></i>
+                      <!-- End Tooltip trigger -->
+                      <span
+                        role="tooltip"
+                        id="tooltip-01"
+                        class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-36 -translate-x-1/2 rounded shadow-md bg-gray-100 p-2 text-sm opacity-0 transition-all before:invisible before:absolute before:left-1/2 before:top-full before:z-10 before:mb-2 before:-ml-2 before:border-x-8 before:border-t-8 before:border-x-transparent before:border-t-slate-700 before:opacity-0 before:transition-all before:content-[''] group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100"
+                        >Enable dark theme</span
+                      >
+                    </span>
+                  </div>
+                  <div>
+                    <span
+                      class="relative overflow-hidden cursor-pointer group hover:overflow-visible focus-visible:outline-none"
+                      aria-describedby="tooltip-01"
+                    >
+                      <!-- Tooltip trigger -->
+                      <i
+                      class="fa-solid fa-desktop text-gray-500 text-md hover:bg-gray-100 px-5 py-2 rounded-md"
+                    ></i>
+                      <!-- End Tooltip trigger -->
+                      <span
+                        role="tooltip"
+                        id="tooltip-01"
+                        class="invisible absolute bottom-full left-1/2 z-10 mb-2 w-40 -translate-x-1/2 rounded shadow-md bg-gray-100 p-2 text-sm opacity-0 transition-all before:invisible before:absolute before:left-1/2 before:top-full before:z-10 before:mb-2 before:-ml-2 before:border-x-8 before:border-t-8 before:border-x-transparent before:border-t-slate-700 before:opacity-0 before:transition-all before:content-[''] group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100"
+                        >Enable system theme</span
+                      >
+                    </span>
+                  </div>
+                 
+                  
+                </div>
+                <div class="flex jutify-center items-center gap-2">
+                  <div>
+                    <i
+                      class="fa-solid fa-arrow-right-from-bracket text-gray-400 text-md"
+                    ></i>
+                  </div>
+                  <div>Sign out</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
