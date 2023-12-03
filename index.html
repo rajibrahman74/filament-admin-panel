@@ -42,12 +42,12 @@
           <!-- Search Bar -->
           <div class="relative">
             <i
-              class="fa-solid fa-magnifying-glass text-gray-400 absolute top-1/2 transform -translate-y-1/2 left-3"
+              class="fa-solid fa-magnifying-glass text-gray-400 absolute top-[12px] left-2 z-10"
             ></i>
             <input
               type="text"
               placeholder="Search"
-              class="transition-all duration-300 ease-in-out md:w-48 lg:w-64 px-4 py-1.5 rounded-lg border border-gray-300 border-[0.5px] focus:border-[0.5px] focus:outline-none focus:ring-1 focus:ring-[#D97706] placeholder-gray-400 transform scale-100 hover:scale-105 focus:scale-105"
+              class="transition-all duration-300 ease-in-out md:w-48 lg:w-64 px-6 lg:px-8 py-1.5 rounded-lg border border-gray-300 border-[0.5px] focus:border-[0.5px] focus:outline-none focus:ring-1 focus:ring-[#D97706] placeholder-gray-400 transform scale-100 hover:scale-105 focus:scale-105"
             />
           </div>
 
@@ -408,45 +408,197 @@
         <!-- 
           Order statistics
          -->
-         <div class="flex lg:flex-row flex-col justify-between gap-4 my-4 w-full ">
-          <div class="bg-white p-6 rounded-lg  lg:w-2/6 border rounded-2xl">
+        <div
+          class="flex lg:flex-row flex-col justify-between gap-4 my-4 w-full"
+        >
+          <div class="bg-white p-6 rounded-lg lg:w-2/6 border rounded-2xl">
             <span class="text-gray-500">Revenue</span>
             <p class="text-3xl font-bold">$192.10k</p>
             <div class="flex items-center gap-1.5 text-green-500">
               <span>32k increase</span>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
-                <path fill-rule="evenodd" d="M12.577 4.878a.75.75 0 01.919-.53l4.78 1.281a.75.75 0 01.531.919l-1.281 4.78a.75.75 0 01-1.449-.387l.81-3.022a19.407 19.407 0 00-5.594 5.203.75.75 0 01-1.139.093L7 10.06l-4.72 4.72a.75.75 0 01-1.06-1.061l5.25-5.25a.75.75 0 011.06 0l3.074 3.073a20.923 20.923 0 015.545-4.931l-3.042-.815a.75.75 0 01-.53-.919z" clip-rule="evenodd"></path>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="h-6 w-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.577 4.878a.75.75 0 01.919-.53l4.78 1.281a.75.75 0 01.531.919l-1.281 4.78a.75.75 0 01-1.449-.387l.81-3.022a19.407 19.407 0 00-5.594 5.203.75.75 0 01-1.139.093L7 10.06l-4.72 4.72a.75.75 0 01-1.06-1.061l5.25-5.25a.75.75 0 011.06 0l3.074 3.073a20.923 20.923 0 015.545-4.931l-3.042-.815a.75.75 0 01-.53-.919z"
+                  clip-rule="evenodd"
+                ></path>
               </svg>
             </div>
-            <img class="mb-0 mt-6 w-full" src="../download.png" alt="">
+            <img class="mb-0 mt-6 w-full" src="../download.png" alt="" />
           </div>
-        
-          <div class="bg-white p-6 rounded-lg  lg:w-2/6 border rounded-2xl">
+
+          <div class="bg-white p-6 rounded-lg lg:w-2/6 border rounded-2xl">
             <span class="text-gray-500">New customers</span>
             <p class="text-3xl font-bold">2.10k</p>
             <div class="flex items-center gap-1.5 text-red-500">
               <span>3% decrease</span>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
-                <path fill-rule="evenodd" d="M12.577 19.122a.75.75 0 01.919.53l4.78-1.281a.75.75 0 01.531-.919l-1.281-4.78a.75.75 0 01-1.449.387l.81 3.022a19.407 19.407 0 00-5.594-5.203.75.75 0 01-1.139-.093L7 13.94l-4.72-4.72a.75.75 0 01-1.06 1.061l5.25 5.25a.75.75 0 011.06 0l3.074-3.073a20.923 20.923 0 015.545 4.931l-3.042.815a.75.75 0 01-.53.919z" clip-rule="evenodd"></path>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="h-6 w-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.577 19.122a.75.75 0 01.919.53l4.78-1.281a.75.75 0 01.531-.919l-1.281-4.78a.75.75 0 01-1.449.387l.81 3.022a19.407 19.407 0 00-5.594-5.203.75.75 0 01-1.139-.093L7 13.94l-4.72-4.72a.75.75 0 01-1.06 1.061l5.25 5.25a.75.75 0 011.06 0l3.074-3.073a20.923 20.923 0 015.545 4.931l-3.042.815a.75.75 0 01-.53.919z"
+                  clip-rule="evenodd"
+                ></path>
               </svg>
             </div>
-         
-            <img class="mb-0 mt-6 w-full" src="../download (1).png" alt="">
+
+            <img class="mb-0 mt-6 w-full" src="../download (1).png" alt="" />
           </div>
-        
-          <div class="bg-white p-6 rounded-lg  lg:w-2/6 border rounded-2xl">
+
+          <div class="bg-white p-6 rounded-lg lg:w-2/6 border rounded-2xl">
             <span class="text-gray-500">New orders</span>
             <p class="text-3xl font-bold">92.10k</p>
             <div class="flex items-center gap-1.5 text-green-500">
               <span>3.2k increase</span>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
-                <path fill-rule="evenodd" d="M12.577 4.878a.75.75 0 01.919-.53l4.78 1.281a.75.75 0 01.531.919l-1.281 4.78a.75.75 0 01-1.449-.387l.81-3.022a19.407 19.407 0 00-5.594 5.203.75.75 0 01-1.139.093L7 10.06l-4.72 4.72a.75.75 0 01-1.06-1.061l5.25-5.25a.75.75 0 011.06 0l3.074 3.073a20.923 20.923 0 015.545-4.931l-3.042-.815a.75.75 0 01-.53-.919z" clip-rule="evenodd"></path>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="h-6 w-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.577 4.878a.75.75 0 01.919-.53l4.78 1.281a.75.75 0 01.531.919l-1.281 4.78a.75.75 0 01-1.449-.387l.81-3.022a19.407 19.407 0 00-5.594 5.203.75.75 0 01-1.139.093L7 10.06l-4.72 4.72a.75.75 0 01-1.06-1.061l5.25-5.25a.75.75 0 011.06 0l3.074 3.073a20.923 20.923 0 015.545-4.931l-3.042-.815a.75.75 0 01-.53-.919z"
+                  clip-rule="evenodd"
+                ></path>
               </svg>
             </div>
-            <img class="mb-0 mt-6 w-full" src="../download.png" alt="">
+            <img class="mb-0 mt-6 w-full" src="../download.png" alt="" />
           </div>
         </div>
-        
+
+        <div class="flex lg:flex-row flex-col gap-4">
+          <div class="border rounded-xl">
+            <div>
+              <h1 class="text-xl font-semibold mb-4 p-4">Orders per month</h1>
+            </div>
+            <hr />
+            <div>
+              <img src="../download (2).png" class="p-4" alt="" />
+            </div>
+          </div>
+          <div>
+            <div class="border rounded-xl">
+              <div>
+                <h1 class="text-xl font-semibold mb-4 p-4">Total customers</h1>
+              </div>
+              <hr />
+              <div>
+                <img src="../download (3).png" class="p-4" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 
+          leatest order table
+         -->
+        <div class="border rounded my-12">
+          <h3 class="p-4">Latest Orders</h3>
+          <hr />
+
+          <div class="flex justify-end my-3 px-4">
+            <div class="relative">
+              <i
+                class="fa-solid fa-magnifying-glass text-gray-400 absolute top-[12px] left-2 z-10"
+              ></i>
+              <input
+                type="text"
+                placeholder="Search"
+                class="transition-all duration-300 ease-in-out md:w-48 lg:w-64 px-8 py-1.5 rounded-lg border border-gray-300 border-[0.5px] focus:border-[0.5px] focus:outline-none focus:ring-1 focus:ring-[#D97706] placeholder-gray-400 transform scale-100 hover:scale-105 focus:scale-105"
+              />
+            </div>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="min-w-full bg-white border border-gray-300">
+              <thead>
+                <tr class="bg-gray-100">
+                  <th class="py-2 px-4 border-b text-left">Order Date</th>
+                  <th class="py-2 px-4 border-b text-left">Number</th>
+                  <th class="py-2 px-4 border-b text-left">Customer</th>
+                  <th class="py-2 px-4 border-b text-left">Status</th>
+                  <th class="py-2 px-4 border-b text-left">Currency</th>
+                  <th class="py-2 px-4 border-b text-left">Total Price</th>
+                  <th class="py-2 px-4 border-b text-left">Shopping Cost</th>
+                  <th class="py-2 px-4 border-b text-left"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="py-2 px-4 border-b text-left">Dec 3, 2023</td>
+                  <td class="py-2 px-4 border-b text-left">0R546200</td>
+                  <td class="py-2 px-4 border-b text-left">Rafig</td>
+                  <td class="py-2 px-4 border-b text-left">
+                    <span class="text-xs border rounded-lg p-1"
+                    >New</span
+                  >
+                  </td>
+                  <td class="py-2 px-4 border-b text-left">Japanese Yen</td>
+                  <td class="py-2 px-4 border-b text-left">234.5</td>
+                  <td class="py-2 px-4 border-b text-left">400.00</td>
+                  <td class="py-2 px-4 border-b text-left">
+                    <span
+                      class="text-orange-600 font-semibold py-1 px-2 rounded"
+                      >open</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-4 border-b text-left">Dec 3, 2023</td>
+                  <td class="py-2 px-4 border-b text-left">0R546200</td>
+                  <td class="py-2 px-4 border-b text-left">Rafig</td>
+                  <td class="py-2 px-4 border-b text-left">
+                    <span class="text-orange-700 text-xs border rounded-lg p-1"
+                      >Processing</span
+                    >
+                  </td>
+                  <td class="py-2 px-4 border-b text-left">Japanese Yen</td>
+                  <td class="py-2 px-4 border-b text-left">234.5</td>
+                  <td class="py-2 px-4 border-b text-left">400.00</td>
+                  <td class="py-2 px-4 border-b text-left">
+                    <span
+                      class="text-orange-600 font-semibold py-1 px-2 rounded"
+                      >open</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-4 border-b text-left">Dec 3, 2023</td>
+                  <td class="py-2 px-4 border-b text-left">0R546200</td>
+                  <td class="py-2 px-4 border-b text-left">Rafig</td>
+                  <td class="py-2 px-4 border-b text-left">
+                    <span class="text-green-700 text-xs border rounded-lg p-1"
+                      >Shipped</span
+                    >
+                  </td>
+                  <td class="py-2 px-4 border-b text-left">Japanese Yen</td>
+                  <td class="py-2 px-4 border-b text-left">234.5</td>
+                  <td class="py-2 px-4 border-b text-left">400.00</td>
+                  <td class="py-2 px-4 border-b text-left">
+                    <span
+                      class="text-orange-600 font-semibold py-1 px-2 rounded"
+                      >open</span
+                    >
+                  </td>
+                </tr>
+                <!-- Add more rows as needed -->
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </section>
   </body>
