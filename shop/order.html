@@ -332,15 +332,17 @@
         main dashboard layout start
        -->
       <div class="lg:w-4/5 w-full mx-3 mt-1">
-        <div class="flex justify-between items-center">
-            <h3 class="text-2xl lg:text-3xl font-bold mb-4">Product</h3>
+        <div
+        class="flex lg:justify-between flex-col lg:flex-row items-start lg:items-center"
+      >
+        <h3 class="text-2xl lg:text-3xl font-bold mb-4">Orders</h3>
 
         <button
-        class="bg-[#D97706] text-white px-4 py-2 rounded-md transition duration-300 hover:bg-yellow-600 focus:outline-none focus:ring focus:border-[#D97706]"
-      >
-        New Product
-      </button>
-        </div>
+          class="bg-[#D97706] text-white px-4 py-2 rounded-md transition duration-300 hover:bg-yellow-600 focus:outline-none focus:ring focus:border-[#D97706]"
+        >
+          New Order
+        </button>
+      </div>
 
         <!-- 
            product statistics start
@@ -349,23 +351,20 @@
           class="flex lg:flex-row flex-col justify-between gap-4 my-4 w-full"
         >
           <div class="bg-white p-6 rounded-lg lg:w-2/6 border rounded-2xl">
-            <span class="text-gray-500">Total Products</span>
-            <p class="text-3xl font-bold">192</p>
+            <span class="text-gray-500">Total Orders</span>
+            <p class="text-3xl font-bold">1921</p>
         
           </div>
           <div class="bg-white p-6 rounded-lg lg:w-2/6 border rounded-2xl">
-            <span class="text-gray-500"> Product Inventory</span>
+            <span class="text-gray-500"> Open orders</span>
             <p class="text-3xl font-bold">92</p>
         
           </div>
           <div class="bg-white p-6 rounded-lg lg:w-2/6 border rounded-2xl">
             <span class="text-gray-500">Average Price</span>
-            <p class="text-3xl font-bold">392.43</p>
+            <p class="text-3xl font-bold">12392.43</p>
         
           </div>
-
-        
-
 
         </div>
  <!-- 
@@ -375,88 +374,128 @@
           leatest order table
          -->
         <div class="border rounded my-12">
-            <!-- filter Icon with Notification Count -->
-            <div class="relative p-4 text-end">
-             
-                <i class="fa-solid fa-filter text-xl text-gray-400 hover:text-gray-600"></i>
-                <span
-                  class="absolute top-2 p-[0.5px] text-xs text-[#D97706] border rounded-full border-gray-100"
-                  >0</span
-                >
-              </div>
-          <hr />
+          
 
-          <div class="flex justify-end my-3 px-4">
-            <div class="relative">
-              <i
-                class="fa-solid fa-magnifying-glass text-gray-400 absolute top-[12px] left-2 z-10"
-              ></i>
-              <input
-                type="text"
-                placeholder="Search"
-                class="transition-all duration-300 ease-in-out md:w-48 lg:w-64 px-8 py-1.5 rounded-lg border border-gray-300 border-[0.5px] focus:border-[0.5px] focus:outline-none focus:ring-1 focus:ring-[#D97706] placeholder-gray-400 transform scale-100 hover:scale-105 focus:scale-105"
-              />
-            </div>
-          </div>
+            <div class="flex justify-between items-center mx-5">
+                <div class="">
+                 
+                  <div class="relative">
+                    <select
+                      class="block appearance-none w-24 bg-white border border-gray-300 px-4 py-2 rounded-md leading-tight focus:outline-none focus:border-[#D97706] focus:ring focus:ring-[#D97706] focus:ring-opacity-50"
+                    >
+                      <option selected disabled>Group</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>All</option>
+                    </select>
+                    <div
+                      class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+                    >
+                      <svg
+                        class="h-4 w-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M19 9l-7 7-7-7"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="flex justify-end items-center gap-1 my-3 px-4">
+                    <div class="relative">
+                      <i
+                        class="fa-solid fa-magnifying-glass text-gray-400 absolute top-[12px] left-2 z-10"
+                      ></i>
+                      <input
+                        type="text"
+                        placeholder="Search"
+                        class="transition-all duration-300 ease-in-out md:w-48 lg:w-64 px-8 py-1.5 rounded-lg border border-gray-300 border-[0.5px] focus:border-[0.5px] focus:outline-none focus:ring-1 focus:ring-[#D97706] placeholder-gray-400 transform scale-100 hover:scale-105 focus:scale-105"
+                      />
+                    </div>
+                    <!-- filter Icon with Notification Count -->
+                    <div class="relative p-4 text-end">
+                      <i
+                        class="fa-solid fa-filter text-xl text-gray-400 hover:text-gray-600"
+                      ></i>
+                      <span
+                        class="absolute top-2 p-[0.5px] text-xs text-[#D97706] border rounded-full border-gray-100"
+                        >0</span
+                      >
+                    </div>
+                  </div>
+              </div>
+
+          
 
           <div class="overflow-x-auto">
             <table class="min-w-full bg-white border border-gray-300">
-              <thead>
+              <thead class="text-sm">
                 <tr class="bg-gray-100">
                   <th class="py-2 px-4 border-b text-left">
                     <input type="checkbox" name="" id="">
                   </th>
-                  <th class="py-2 px-4 border-b text-left">Image</th>
-                  <th class="py-2 px-4 border-b text-left">Name</th>
-                  <th class="py-2 px-4 border-b text-left">Brand</th>
+                
+                  <th class="py-2 px-4 border-b text-left">Customer</th>
+                  <th class="py-2 px-4 border-b text-left">Status</th>
                   <th class="py-2 px-4 border-b text-left">Visibility</th>
-                  <th class="py-2 px-4 border-b text-left">Price</th>
-                  <th class="py-2 px-4 border-b text-left">SKU</th>
-                  <th class="py-2 px-4 border-b text-left">Quantity</th>
+                  <th class="py-2 px-4 border-b text-left">Currency</th>
+                  <th class="py-2 px-4 border-b text-left">Shipping cost</th>
+                  <th class="py-2 px-4 border-b text-left">Order Date</th>
                   <th class="py-2 px-4 border-b text-left"></th>
                 </tr>
               </thead>
               <tbody>
+                <!-- table row-1 -->
                 <tr class="hover:bg-gray-50">
                   <td class="py-2 px-4 border-b text-left">
                     <input type="checkbox" name="" id="">
                   </td>
+             
+                  <td class="py-2 px-4 border-b text-left">OR995608</td>
+                  <td class="py-2 px-4 border-b text-left">Eulah pouros</td>
                   <td class="py-2 px-4 border-b text-left">
-                    <img src="https://demo.filamentphp.com/storage/1/200x200.jpeg" class="w-9 rounded" alt="">
+                    <span class="text-xs border rounded-lg p-1">New</span>
                   </td>
-                  <td class="py-2 px-4 border-b text-left">Multi channeled bandwidth-monitored open architecture</td>
-                  <td class="py-2 px-4 border-b text-left">Hegmann Inc</td>
-                  <td class="py-2 px-4 border-b text-left">
-                    <i class="fa-regular fa-circle-xmark text-red-400"></i>
+                  <td class="py-2  border-b text-left">
+                    <span class="text-xs rounded-md p-1">Dominican peso</span>
                   </td>
-                  <td class="py-2 px-4 border-b text-left">
-                    <span class="text-xs bg-yellow-200 text-yellow-800 rounded-md p-1">$192.99</span>
-                  </td>
-                  <td class="py-2 px-4 border-b text-left">4583884</td>
-                  <td class="py-2 px-4 border-b text-left">23</td>
+                  <td class="py-2 px-4 border-b text-left">54.00</td>
+                  <td class="py-2 px-4 border-b text-left">Apr 23, 2023</td>
                   <td class="py-2 px-4 border-b text-left">
                     <span class="text-orange-600 font-semibold py-1 px-2 rounded cursor-pointer hover:bg-orange-100"
                       >Edit</span
                     >
                   </td>
                 </tr>
+                <!-- table row-2 -->
                 <tr class="hover:bg-gray-50">
                   <td class="py-2 px-4 border-b text-left">
                     <input type="checkbox" name="" id="">
                   </td>
+              
+                  <td class="py-2 px-4 border-b text-left">845667GR</td>
+                  <td class="py-2 px-4 border-b text-left">Shalom</td>
                   <td class="py-2 px-4 border-b text-left">
-                    <img src="https://demo.filamentphp.com/storage/1/200x200.jpeg" class="w-9 rounded" alt="">
+                    <span class="text-green-700 text-xs border rounded-lg p-1"
+                      >Shipped</span
+                    >
                   </td>
-                  <td class="py-2 px-4 border-b text-left">Stand-alon tertiary help-desk</td>
-                  <td class="py-2 px-4 border-b text-left">Walker and sons</td>
-                  <td class="py-2 px-4 border-b text-left">
-                    <i class="fa-regular fa-circle-check text-green-400"></i>
+                  <td class="py-2  border-b text-left">
+                    <span class="text-xs rounded-md p-1">BD</span>
                   </td>
-                  <td class="py-2 px-4 border-b text-left">
-                    <span class="text-xs bg-yellow-200 text-yellow-800 rounded-md p-1">$192.99</span>
-                  </td>
-                  <td class="py-2 px-4 border-b text-left">4583884</td>
-                  <td class="py-2 px-4 border-b text-left">23</td>
+                  <td class="py-2 px-4 border-b text-left">45834</td>
+                  <td class="py-2 px-4 border-b text-left">Jun 21, 23</td>
                   <td class="py-2 px-4 border-b text-left">
                     <span class="text-orange-600 font-semibold py-1 px-2 rounded cursor-pointer hover:bg-orange-100"
                       >Edit</span
