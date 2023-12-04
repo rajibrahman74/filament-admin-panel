@@ -22,13 +22,15 @@
   </head>
   <body>
     <!-- 
-        navbar
+        navbar start
      -->
     <section>
       <div
         class="navbar shadow-md px-4 md:px-6 lg:px-8 py-3 flex justify-between"
       >
-        <!-- Hamburger Menu Icon for Small Screens -->
+        <!--
+           Hamburger Menu Icon for Small Screens
+        -->
         <button
           id="menu-toggle"
           class="block md:hidden text-gray-400 focus:outline-none"
@@ -39,6 +41,7 @@
           <a href="#" class="text-xl font-bold">Filament Demo</a>
         </div>
         <div class="flex items-center space-x-4">
+
           <!-- Search Bar -->
           <div class="relative">
             <i
@@ -65,6 +68,7 @@
           <!-- User Avatar Dropdown -->
 
           <div class="w-9 rounded-full">
+
             <!-- Replace the image URL with your user avatar image URL -->
             <img
               class="rounded-full"
@@ -75,13 +79,19 @@
         </div>
       </div>
     </section>
+    <!-- 
+      Navbar end
+     -->
 
     <!-- 
-      dashboard section
+      dashboard section start
      -->
     <section
       class="container flex justify-center lg:justify-between gap-x-2 mx-auto px-4 mt-6"
     >
+    <!-- 
+      side navbar start
+     -->
       <aside
         class="flex flex-col w-1/5 h-screen px-5 overflow-y-auto bg-white border-r rtl:border-r-0 rtl:border-l dark:bg-gray-900 dark:border-gray-700 hidden lg:block"
       >
@@ -209,6 +219,7 @@
                 >
               </a>
             </div>
+
             <!--
               Blog dropdown
              -->
@@ -312,9 +323,13 @@
           </nav>
         </div>
       </aside>
+      <!-- 
+        side navbar end
+       -->
+
 
       <!-- 
-        main dashboard layout
+        main dashboard layout start
        -->
       <div class="lg:w-4/5 w-full mx-3 mt-1">
         <h3 class="text-2xl lg:text-3xl font-bold mb-4">Dashboard</h3>
@@ -542,9 +557,7 @@
                   <td class="py-2 px-4 border-b text-left">0R546200</td>
                   <td class="py-2 px-4 border-b text-left">Rafig</td>
                   <td class="py-2 px-4 border-b text-left">
-                    <span class="text-xs border rounded-lg p-1"
-                    >New</span
-                  >
+                    <span class="text-xs border rounded-lg p-1">New</span>
                   </td>
                   <td class="py-2 px-4 border-b text-left">Japanese Yen</td>
                   <td class="py-2 px-4 border-b text-left">234.5</td>
@@ -603,11 +616,12 @@
         <!-- pagination -->
 
         <div class="flex justify-between items-center my-4">
-         
-          <div class="flex items-center space-x-2 border ">
+          <div class="flex items-center space-x-2 border">
             <span class="text-gray-500 p-2">Page</span>
             <div class="relative">
-              <select class="block appearance-none w-24 bg-white border border-gray-300 px-4 py-2 rounded-md leading-tight focus:outline-none focus:border-[#D97706] focus:ring focus:ring-[#D97706] focus:ring-opacity-50">
+              <select
+                class="block appearance-none w-24 bg-white border border-gray-300 px-4 py-2 rounded-md leading-tight focus:outline-none focus:border-[#D97706] focus:ring focus:ring-[#D97706] focus:ring-opacity-50"
+              >
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -615,24 +629,40 @@
                 <option>5</option>
                 <option>All</option>
               </select>
-              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M19 9l-7 7-7-7"></path>
+              <div
+                class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+              >
+                <svg
+                  class="h-4 w-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
                 </svg>
               </div>
             </div>
-            
           </div>
-          <button class="bg-[#D97706] text-white px-4 py-2 rounded-md transition duration-300 hover:bg-yellow-600 focus:outline-none focus:ring focus:border-[#D97706]">
+          <button
+            class="bg-[#D97706] text-white px-4 py-2 rounded-md transition duration-300 hover:bg-yellow-600 focus:outline-none focus:ring focus:border-[#D97706]"
+          >
             Next
           </button>
         </div>
-        
-        
-
       </div>
+      <!-- 
+        main dashboard layout end
+       -->
+
     </section>
+    <!-- 
+      dashboard section end
+     -->
   </body>
 </html>
