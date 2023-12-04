@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard - Filament Demo</title>
+    <title>Customer - Filament Demo</title>
     <!-- 
        font awesome cdn
      -->
@@ -41,7 +41,6 @@
           <a href="#" class="text-xl font-bold">Filament Demo</a>
         </div>
         <div class="flex items-center space-x-4">
-
           <!-- Search Bar -->
           <div class="relative">
             <i
@@ -68,7 +67,6 @@
           <!-- User Avatar Dropdown -->
 
           <div class="w-9 rounded-full">
-
             <!-- Replace the image URL with your user avatar image URL -->
             <img
               class="rounded-full"
@@ -89,7 +87,7 @@
     <section
       class="container flex justify-center lg:justify-between gap-x-2 mx-auto px-4 mt-6"
     >
-    <!-- 
+      <!-- 
       side navbar start
      -->
       <aside
@@ -99,7 +97,7 @@
           <nav class="-mx-3 space-y-3">
             <a
               class="flex items-center w-full px-3 py-2 font-medium text-[#D97706] transition-colors duration-300 transform rounded-lg dark:text-[#D97706] hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-[#D97706]"
-              href="#"
+              href="/index.html"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -149,7 +147,7 @@
               </button>
               <a
                 class="flex items-center px-3 py-2 transition-colors duration-300 transform rounded-lg dark:text-gray-300 ml-2 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-                href="/shop/product.html"
+                href="#"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -174,7 +172,7 @@
               </a>
               <a
                 class="flex items-center px-3 py-2 transition-colors duration-300 transform rounded-lg dark:text-gray-300 ml-2 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-                href="shop/customer.html"
+                href="#"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -275,7 +273,7 @@
               </a>
               <a
                 class="flex items-center px-3 py-2 transition-colors duration-300 transform rounded-lg dark:text-gray-300 ml-2 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-                href="shop/categorie.html"
+                href="#"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -327,204 +325,28 @@
         side navbar end
        -->
 
-
       <!-- 
         main dashboard layout start
        -->
       <div class="lg:w-4/5 w-full mx-3 mt-1">
-        <h3 class="text-2xl lg:text-3xl font-bold mb-4">Dashboard</h3>
-
-        <!-- 
-          input group
-         -->
-        <div>
-          <form
-            class="flex flex-col lg:flex-row justify-between item-center gap-4 border rounded-2xl p-4"
-          >
-            <div class="flex flex-col gap-y-3">
-              <label>Business customers only</label>
-              <select
-                class="select w-full lg:max-w-xs px-8 py-1.5 rounded-lg border border-gray-300 border-[0.5px] focus:border-[0.5px] focus:outline-none focus:ring-1 focus:ring-[#D97706] placeholder-gray-400"
-              >
-                <option disabled selected>-</option>
-                <option>Yes</option>
-                <option>No</option>
-              </select>
-            </div>
-
-            <div class="flex flex-col gap-y-3">
-              <label>Start date</label>
-              <input
-                type="date"
-                class="select w-full lg:max-w-xs px-8 py-1.5 rounded-lg border border-gray-300 border-[0.5px] focus:border-[0.5px] focus:outline-none focus:ring-1 focus:ring-[#D97706] placeholder-gray-400"
-              />
-            </div>
-            <div class="flex flex-col gap-y-3">
-              <label>End date</label>
-              <input
-                type="date"
-                class="select w-full lg:max-w-xs px-8 py-1.5 rounded-lg border border-gray-300 border-[0.5px] focus:border-[0.5px] focus:outline-none focus:ring-1 focus:ring-[#D97706] placeholder-gray-400"
-              />
-            </div>
-          </form>
-        </div>
-
-        <!-- User Info -->
-        <div class="flex lg:flex-row flex-col justify-between gap-4 my-4">
-          <!-- Left Section -->
-          <div class="lg:w-1/2 w-full flex items-center rounded-3xl border p-4">
-            <div class="w-9 rounded-full mr-3">
-              <!-- Replace the image URL with your user avatar image URL -->
-              <img
-                class="rounded-full"
-                alt="User Avatar"
-                src="https://placekitten.com/50/50"
-              />
-            </div>
-            <div>
-              <h1 class="text-lg font-semibold">Welcome</h1>
-              <p class="text-sm">Demo user</p>
-            </div>
-            <div
-              class="ml-auto flex justify-center items-center gap-3 border rounded-lg p-1.5 cursor-pointer"
-            >
-              <i
-                class="fa-solid fa-arrow-right-from-bracket text-lg text-gray-400"
-              ></i>
-              <span class="text-sm font-semibold">Sign out</span>
-            </div>
-          </div>
-
-          <!-- Right Section -->
-          <div
-            class="lg:w-1/2 w-full flex justify-between rounded-3xl border p-4"
-          >
-            <div>
-              <h1
-                class="text-xl font-semibold mb-2 cursor-pointer font-semibold"
-              >
-                Filament
-              </h1>
-              <p class="text-sm">v3.1.0</p>
-            </div>
-            <div class="flex flex-col gap-2">
-              <p class="flex items-center text-sm hover:underline">
-                <i class="far fa-file text-[#6366F1] mr-2"></i>
-                Documentation
-              </p>
-              <p class="flex items-center text-sm hover:underline">
-                <i class="fab fa-github text-[#6366F1] mr-2"></i>
-                GitHub
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- 
-          Order statistics
-         -->
         <div
-          class="flex lg:flex-row flex-col justify-between gap-4 my-4 w-full"
+          class="flex lg:justify-between flex-col lg:flex-row items-start lg:items-center"
         >
-          <div class="bg-white p-6 rounded-lg lg:w-2/6 border rounded-2xl">
-            <span class="text-gray-500">Revenue</span>
-            <p class="text-3xl font-bold">$192.10k</p>
-            <div class="flex items-center gap-1.5 text-green-500">
-              <span>32k increase</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                class="h-6 w-6"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M12.577 4.878a.75.75 0 01.919-.53l4.78 1.281a.75.75 0 01.531.919l-1.281 4.78a.75.75 0 01-1.449-.387l.81-3.022a19.407 19.407 0 00-5.594 5.203.75.75 0 01-1.139.093L7 10.06l-4.72 4.72a.75.75 0 01-1.06-1.061l5.25-5.25a.75.75 0 011.06 0l3.074 3.073a20.923 20.923 0 015.545-4.931l-3.042-.815a.75.75 0 01-.53-.919z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </div>
-            <img class="mb-0 mt-6 w-full" src="assets/increase-line.png" alt="" />
-          </div>
+          <h3 class="text-2xl lg:text-3xl font-bold mb-4">Customers</h3>
 
-          <div class="bg-white p-6 rounded-lg lg:w-2/6 border rounded-2xl">
-            <span class="text-gray-500">New customers</span>
-            <p class="text-3xl font-bold">2.10k</p>
-            <div class="flex items-center gap-1.5 text-red-500">
-              <span>3% decrease</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                class="h-6 w-6"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M12.577 19.122a.75.75 0 01.919.53l4.78-1.281a.75.75 0 01.531-.919l-1.281-4.78a.75.75 0 01-1.449.387l.81 3.022a19.407 19.407 0 00-5.594-5.203.75.75 0 01-1.139-.093L7 13.94l-4.72-4.72a.75.75 0 01-1.06 1.061l5.25 5.25a.75.75 0 011.06 0l3.074-3.073a20.923 20.923 0 015.545 4.931l-3.042.815a.75.75 0 01-.53.919z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </div>
-
-            <img class="mb-0 mt-6 w-full" src="assets/decrease-line.png" alt="" />
-          </div>
-
-          <div class="bg-white p-6 rounded-lg lg:w-2/6 border rounded-2xl">
-            <span class="text-gray-500">New orders</span>
-            <p class="text-3xl font-bold">92.10k</p>
-            <div class="flex items-center gap-1.5 text-green-500">
-              <span>3.2k increase</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                class="h-6 w-6"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M12.577 4.878a.75.75 0 01.919-.53l4.78 1.281a.75.75 0 01.531.919l-1.281 4.78a.75.75 0 01-1.449-.387l.81-3.022a19.407 19.407 0 00-5.594 5.203.75.75 0 01-1.139.093L7 10.06l-4.72 4.72a.75.75 0 01-1.06-1.061l5.25-5.25a.75.75 0 011.06 0l3.074 3.073a20.923 20.923 0 015.545-4.931l-3.042-.815a.75.75 0 01-.53-.919z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </div>
-            <img class="mb-0 mt-6 w-full" src="assets/increase-line.png" alt="" />
-          </div>
+          <button
+            class="bg-[#D97706] text-white px-4 py-2 rounded-md transition duration-300 hover:bg-yellow-600 focus:outline-none focus:ring focus:border-[#D97706]"
+          >
+            New Customer
+          </button>
         </div>
-
-        <div class="flex lg:flex-row flex-col gap-4">
-          <div class="border rounded-xl">
-            <div>
-              <h1 class="text-xl font-semibold mb-4 p-4">Orders per month</h1>
-            </div>
-            <hr />
-            <div>
-              <img src="assets/order-graph.png" class="p-4" alt="" />
-            </div>
-          </div>
-          <div>
-            <div class="border rounded-xl">
-              <div>
-                <h1 class="text-xl font-semibold mb-4 p-4">Total customers</h1>
-              </div>
-              <hr />
-              <div>
-                <img src="assets/customer-graph.png" class="p-4" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-
         <!-- 
           leatest order table
          -->
         <div class="border rounded my-12">
-          <h3 class="p-4">Latest Orders</h3>
           <hr />
 
-          <div class="flex justify-end my-3 px-4">
+          <div class="flex justify-end items-center gap-1 my-3 px-4">
             <div class="relative">
               <i
                 class="fa-solid fa-magnifying-glass text-gray-400 absolute top-[12px] left-2 z-10"
@@ -535,75 +357,111 @@
                 class="transition-all duration-300 ease-in-out md:w-48 lg:w-64 px-8 py-1.5 rounded-lg border border-gray-300 border-[0.5px] focus:border-[0.5px] focus:outline-none focus:ring-1 focus:ring-[#D97706] placeholder-gray-400 transform scale-100 hover:scale-105 focus:scale-105"
               />
             </div>
+            <!-- filter Icon with Notification Count -->
+            <div class="relative p-4 text-end">
+              <i
+                class="fa-solid fa-filter text-xl text-gray-400 hover:text-gray-600"
+              ></i>
+              <span
+                class="absolute top-2 p-[0.5px] text-xs text-[#D97706] border rounded-full border-gray-100"
+                >0</span
+              >
+            </div>
           </div>
 
           <div class="overflow-x-auto">
             <table class="min-w-full bg-white border border-gray-300">
-              <thead>
+              <thead class="text-sm">
                 <tr class="bg-gray-100">
-                  <th class="py-2 px-4 border-b text-left">Order Date</th>
-                  <th class="py-2 px-4 border-b text-left">Number</th>
-                  <th class="py-2 px-4 border-b text-left">Customer</th>
-                  <th class="py-2 px-4 border-b text-left">Status</th>
-                  <th class="py-2 px-4 border-b text-left">Currency</th>
-                  <th class="py-2 px-4 border-b text-left">Total Price</th>
-                  <th class="py-2 px-4 border-b text-left">Shopping Cost</th>
+                  <th class="py-2 px-4 border-b text-left">
+                    <input type="checkbox" name="" id="" />
+                  </th>
+                  <th class="py-2 px-4 border-b text-left">Name</th>
+                  <th class="py-2 px-4 border-b text-left">Email</th>
+                  <th class="py-2 px-4 border-b text-left">Country</th>
+                  <th class="py-2 px-4 border-b text-left">Phone</th>
                   <th class="py-2 px-4 border-b text-left"></th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <td class="py-2 px-4 border-b text-left">Dec 3, 2023</td>
-                  <td class="py-2 px-4 border-b text-left">0R546200</td>
-                  <td class="py-2 px-4 border-b text-left">Rafig</td>
+              <tbody class="text-sm">
+                <tr class="hover:bg-gray-50">
                   <td class="py-2 px-4 border-b text-left">
-                    <span class="text-xs border rounded-lg p-1">New</span>
+                    <input type="checkbox" name="" id="" />
                   </td>
-                  <td class="py-2 px-4 border-b text-left">Japanese Yen</td>
-                  <td class="py-2 px-4 border-b text-left">234.5</td>
-                  <td class="py-2 px-4 border-b text-left">400.00</td>
+                  <td class="py-2 px-4 border-b text-left">
+                    <!-- searchbox -->
+                    <div class="relative">
+                      <i
+                        class="fa-solid fa-magnifying-glass text-gray-400 absolute top-[12px] left-2 z-10"
+                      ></i>
+                      <input
+                        type="text"
+                        placeholder="Search"
+                        class="transition-all duration-300 ease-in-out w-36 px-8 py-1.5 rounded-lg border border-gray-300 border-[0.5px] focus:border-[0.5px] focus:outline-none focus:ring-1 focus:ring-[#D97706] placeholder-gray-400 transform scale-100 hover:scale-105 focus:scale-105"
+                      />
+                    </div>
+                  </td>
+                  <td class="py-2 px-4 border-b text-left">
+                    <div class="relative">
+                      <i
+                        class="fa-solid fa-magnifying-glass text-gray-400 absolute top-[12px] left-2 z-10"
+                      ></i>
+                      <input
+                        type="text"
+                        placeholder="Search"
+                        class="transition-all duration-300 ease-in-out w-52 px-8 py-1.5 rounded-lg border border-gray-300 border-[0.5px] focus:border-[0.5px] focus:outline-none focus:ring-1 focus:ring-[#D97706] placeholder-gray-400 transform scale-100 hover:scale-105 focus:scale-105"
+                      />
+                    </div>
+                  </td>
+                  <td class="py-2 px-4 border-b text-left">
+                    
+                  </td>
+                  <td class="py-2 px-4 border-b text-left">
+
+                  </td>
+                  <td class="py-2 px-4 border-b text-left"></td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td class="py-2 px-4 border-b text-left">
+                    <input type="checkbox" name="" id="" />
+                  </td>
+                  <td class="py-2 px-4 border-b text-left">
+                    Stand-alon tertiary help-desk
+                  </td>
+                  <td class="py-2 px-4 border-b text-left">walkerads@gmail.com</td>
+                  <td class="py-2 px-4 border-b text-left">
+                    Cocos Island
+                  </td>
+                  <td class="py-2 px-4 border-b text-left">
+                    9122326387
+                  </td>
+                  <td class="py-2 px-4 border-b text-left"></td>
                   <td class="py-2 px-4 border-b text-left">
                     <span
-                      class="text-orange-600 font-semibold py-1 px-2 rounded"
-                      >open</span
+                      class="text-orange-600 font-semibold py-1 px-2 rounded cursor-pointer hover:bg-orange-100"
+                      >Edit</span
                     >
                   </td>
                 </tr>
-                <tr>
-                  <td class="py-2 px-4 border-b text-left">Dec 3, 2023</td>
-                  <td class="py-2 px-4 border-b text-left">0R546200</td>
-                  <td class="py-2 px-4 border-b text-left">Rafig</td>
+                <tr class="hover:bg-gray-50">
                   <td class="py-2 px-4 border-b text-left">
-                    <span class="text-orange-700 text-xs border rounded-lg p-1"
-                      >Processing</span
-                    >
+                    <input type="checkbox" name="" id="" />
                   </td>
-                  <td class="py-2 px-4 border-b text-left">Japanese Yen</td>
-                  <td class="py-2 px-4 border-b text-left">234.5</td>
-                  <td class="py-2 px-4 border-b text-left">400.00</td>
+                  <td class="py-2 px-4 border-b text-left">
+                    Stand-alon tertiary help-desk
+                  </td>
+                  <td class="py-2 px-4 border-b text-left">walkerads@gmail.com</td>
+                  <td class="py-2 px-4 border-b text-left">
+                    Cocos Island
+                  </td>
+                  <td class="py-2 px-4 border-b text-left">
+                    9122326387
+                  </td>
+                  <td class="py-2 px-4 border-b text-left"></td>
                   <td class="py-2 px-4 border-b text-left">
                     <span
-                      class="text-orange-600 font-semibold py-1 px-2 rounded"
-                      >open</span
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-2 px-4 border-b text-left">Dec 3, 2023</td>
-                  <td class="py-2 px-4 border-b text-left">0R546200</td>
-                  <td class="py-2 px-4 border-b text-left">Rafig</td>
-                  <td class="py-2 px-4 border-b text-left">
-                    <span class="text-green-700 text-xs border rounded-lg p-1"
-                      >Shipped</span
-                    >
-                  </td>
-                  <td class="py-2 px-4 border-b text-left">Japanese Yen</td>
-                  <td class="py-2 px-4 border-b text-left">234.5</td>
-                  <td class="py-2 px-4 border-b text-left">400.00</td>
-                  <td class="py-2 px-4 border-b text-left">
-                    <span
-                      class="text-orange-600 font-semibold py-1 px-2 rounded"
-                      >open</span
+                      class="text-orange-600 font-semibold py-1 px-2 rounded cursor-pointer hover:bg-orange-100"
+                      >Edit</span
                     >
                   </td>
                 </tr>
@@ -659,7 +517,6 @@
       <!-- 
         main dashboard layout end
        -->
-
     </section>
     <!-- 
       dashboard section end
